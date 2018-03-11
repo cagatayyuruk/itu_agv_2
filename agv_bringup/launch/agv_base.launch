@@ -1,0 +1,7 @@
+<launch>
+ <!-- epos cmd node -->
+  <node respawn="true" pkg="agv_cmd" type="eposCmd" name="eposCmd" >
+    <param name="topic" value="/agv2/cmd_vel" />
+  </node>
+
+</launch>
