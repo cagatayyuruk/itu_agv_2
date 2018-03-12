@@ -1,0 +1,26 @@
+<robot
+  name="rover_description">
+
+  <link
+    name="base_link">
+    <visual>
+       <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agv_description/meshes/agv1000.stl" scale="1 1 1" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.508039215686275 0.5517647058823529 0.6029411764705882 1" />
+      </material>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+    </visual>
+  </link>
+
+
+</robot>
