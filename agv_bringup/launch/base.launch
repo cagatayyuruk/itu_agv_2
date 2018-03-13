@@ -4,7 +4,4 @@
     <param name="topic" value="/agv2/cmd_vel" />
   </node>
 
-  <!-- RVIZ -->
-  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find agv_bringup)/agv_display.rviz" />
-
 </launch>
