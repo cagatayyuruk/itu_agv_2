@@ -1,0 +1,23 @@
+odom_frame: odom
+base_link_frame: base_link
+world_frame: odom
+
+two_d_mode: false #false for 3d
+
+frequency: 50
+
+#odometry from gps via Navsat Transform
+odom0: odometry/gps
+odom0_config: [true, true, true,
+              false, false, false,
+              false,false, false,
+              false, false, false,
+              false, false, false]
+odom0_differential: false # keep false
+odom0_queue_size: 10
+ 
+
+#TODO: check how it work, not tested.
+use_control: true
+control_config: [true, false, false,
+                false, false, true]

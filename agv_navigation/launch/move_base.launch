@@ -32,7 +32,7 @@ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCL
   <!-- <arg name="base_local_planner" default="base_local_planner/TrajectoryPlannerROS"/> -->
 
   <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
-    <remap from="/odom" to="/odom" />
+    <remap from="/odom" to="/odometry/filtered" />
     <remap from="/cmd_vel" to="/agv2/cmd_vel" />
      
     <param name="base_global_planner" value="$(arg base_global_planner)"/>

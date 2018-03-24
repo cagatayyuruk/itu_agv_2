@@ -1,0 +1,15 @@
+<!-- Localization launch file for AGV robots -->
+<!-- Maintainer: Çağatay Yürük --> 
+<launch>
+
+  <!-- Run the navsat transform node for current gps point-->
+
+  <!-- Run the ekf localization node -->
+  <node pkg="robot_localization" type="ekf_localization_node" name="ekf_localization">
+
+  	<rosparam command="load" file="$(find agv_localization)/config/localization.yaml" />
+  	<remap from="cmd_vel" to="/agv2/cmd_vel"/>
+
+  </node>
+
+ </launch>
